@@ -1,4 +1,13 @@
 {
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        },
+
+    },
     "rules": {
         "indent": [
             2,
@@ -22,18 +31,23 @@
         "browser": true,
         "node": true
     },
-    "extends": "eslint:recommended",
-    "ecmaFeatures": {
-        "jsx": true,
-        "experimentalObjectRestSpread": true,
-        "modules": true
-    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
     "plugins": [
         "react"
     ],
     "globals": {
         "__DEVELOPMENT__": true,
-        "__VERSION__": true,
-        "__SERVER_URL__": true
+        "describe": true,
+        "before": true,
+        "beforeEach": true,
+        "it": true,
+        "after": true,
+        "afterEach": true,
+        "assert": true,
+        "React": true,
+        "TestUtils": true,
+        "document": true,
+        "window": true,
+        "enzyme": true
     }
 }
