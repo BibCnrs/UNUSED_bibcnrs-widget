@@ -8,6 +8,7 @@ before(function (done) {
     global.client = nightwatch.initClient({
         silent: true,
         src_folders: ['./test/e2e'],
+        custom_commands_path: './test/e2e/command',
         selenium_host: 'hub',
         desiredCapabilities: {
             browserName: 'chrome'
