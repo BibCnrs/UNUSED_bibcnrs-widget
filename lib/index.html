@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>EBSCO Widget dev</title>
+
+  </head>
+  <body>
+    <div id="hello"></div>
+    <script>
+'use strict';
+document.onreadystatechange = function () {
+    if (document.readyState === 'complete') {
+        var rootElement = document.getElementById('hello');
+        window.ReactDom.render(React.createElement(window.Hello, { 'name': 'bibcnrs' }), rootElement);
+    }
+};
+    </script>
+  </body>
+</html>
