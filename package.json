@@ -42,8 +42,7 @@
     "type": "git",
     "url": "https://github.com/BibCnrs/bibcnrs-widget.git"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "CeCILL",
   "bugs": {
     "url": "https://github.com/BibCnrs/bibcnrs-widget/issues"
   },
