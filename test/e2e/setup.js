@@ -19,7 +19,8 @@ before(function (done) {
     global.browser = global.client.api();
 
     global.browser
-    .url(global.browser.launch_url);
+    .url(global.browser.launch_url)
+    .pause(1000);
 
     global.client.start(done);
 });
