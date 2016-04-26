@@ -34,4 +34,4 @@ test:
     service: node
   environment:
     NODE_ENV: test
-  command: node_modules/mocha/bin/mocha test/mocha test/mocha/**/*.js
+  command: node_modules/mocha/bin/mocha test/mocha lib/**/*.test.js

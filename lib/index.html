@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>EBSCO Widget dev</title>
-
   </head>
   <body>
     <div id="hello"></div>
+    <script type="text/javascript" src="node_modules/react/dist/react.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="node_modules/react-dom/dist/react-dom.min.js" charset="utf-8"></script>
     <script>
 'use strict';
 document.onreadystatechange = function () {
     if (document.readyState === 'complete') {
         var rootElement = document.getElementById('hello');
-        window.ReactDom.render(React.createElement(window.Hello, { 'name': 'bibcnrs' }), rootElement);
+        window.ReactDOM.render(window.React.createElement(window.bibcnrsWidget.Hello), rootElement);
     }
 };
     </script>

@@ -1,6 +1,5 @@
 {
     "src_folders": ["./test/e2e"],
-    "custom_commands_path" : "./test/e2e/command",
     "test_settings": {
         "default": {
             "test_runner": {
