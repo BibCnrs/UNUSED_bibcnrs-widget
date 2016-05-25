@@ -5,6 +5,7 @@
     <title>EBSCO Widget dev</title>
   </head>
   <body>
+    <div id="header"></div>
     <div id="hello"></div>
     <script type="text/javascript" src="node_modules/react/dist/react.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="node_modules/react-dom/dist/react-dom.min.js" charset="utf-8"></script>
@@ -12,8 +13,8 @@
 'use strict';
 document.onreadystatechange = function () {
     if (document.readyState === 'complete') {
-        var rootElement = document.getElementById('hello');
-        window.ReactDOM.render(window.React.createElement(window.bibcnrsWidget.Header), rootElement);
+        var headerElement = document.getElementById('header');
+        window.ReactDOM.render(window.React.createElement(window.bibcnrsWidget.Header), headerElement);
     }
 };
     </script>
