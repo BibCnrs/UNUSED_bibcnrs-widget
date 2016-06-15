@@ -1,0 +1,35 @@
+.connexion {
+    width: 100%;
+}
+.infos {
+    display: inline-block;
+    min-height: 60px;
+    margin-left: 100px;
+    font-style: italic;
+    font-size: 14px;
+    width: 90%;
+    .name {
+        padding-left: 20%;
+        width: 100%;
+    }
+    .domain {
+        padding-left: 40%;
+        width: 100%;
+    }
+    .otherDomains {
+        padding-left: 40%;
+        width: 100%;
+    }
+}
+.bibcnrslogo {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    max-height: 70px;
+}
+.decoheader {
+    position: absolute;
+    top: 30px;
+    left: 125px;
+    z-index: -10;
+}
