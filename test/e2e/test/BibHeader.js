@@ -15,12 +15,13 @@ describe('Header', function() {
         browser
         .waitForElementVisible('.connexion', 1000)
         .assert.containsText('.domain', 'Connectez-vous !')
-        .setSessionStorageKey('EBSCO_WIDGET_domain', 'insb')
-        .pause(1000)
-        .assert.containsText('.domain', 'Votre domaine principal : insb');
+        .setSessionStorageKey('EBSCO_WIDGET_domain', 'INSB')
+        .pause(2000)
+        .assert.containsText('.domain', 'Votre domaine principal : INSB');
 
         client.start(done);
     });
+
     it('should display hello world then sessionstorage.EBSCO_WIDGET_availableDomains value once set', function (done) {
         browser
         .waitForElementVisible('.connexion', 1000)

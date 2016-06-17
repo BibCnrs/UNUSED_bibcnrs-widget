@@ -36,7 +36,8 @@ module.exports = {
             {
                 test: /\.(otf|eot|svg|ttf|woff|woff2)(\?.+)?$/,
                 loader: 'url-loader?limit=8192'
-            }
+            },
+            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=40960' }
         ]
     },
     entry: {
@@ -65,5 +66,10 @@ module.exports = {
         new ExtractTextPlugin('build/app.css', {
             allChunks: true
         })
-    ]
+    ],
+    externals: {
+        'react': 'React',
+        'react-dom': 'ReactDOM',
+        'babel-polyfill': '_babelPolyfill'
+    }
 };
