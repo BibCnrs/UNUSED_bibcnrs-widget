@@ -1,6 +1,6 @@
 {
   "name": "bibcnrs-widget",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react widget for bibcnrs",
   "main": "webpack.config.dev.js",
   "dependencies": {
