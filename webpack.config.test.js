@@ -36,7 +36,7 @@ module.exports = {
                 test: /\.(otf|eot|svg|ttf|woff|woff2)(\?.+)?$/,
                 loader: 'url-loader?limit=8192'
             },
-            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
+            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=40960' }
         ]
     },
     entry: {
