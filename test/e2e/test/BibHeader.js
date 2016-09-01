@@ -14,10 +14,10 @@ describe('Header', function() {
     it('should display hello world then sessionstorage.EBSCO_WIDGET_domain value once set', function (done) {
         browser
         .waitForElementVisible('.connexion', 1000)
-        .assert.containsText('.domain', 'Connectez-vous !')
+        .assert.attributeEquals('.bibcnrslogo', 'alt', 'logo bibcnrs ')
         .setSessionStorageKey('EBSCO_WIDGET_domain', 'INSB')
         .pause(2000)
-        .assert.containsText('.domain', 'Votre domaine principal : INSB');
+        .assert.attributeEquals('.bibcnrslogo', 'alt', 'logo bibcnrs INSB');
 
         client.start(done);
     });
@@ -28,7 +28,7 @@ describe('Header', function() {
         .assert.containsText('.otherDomains', '')
         .setSessionStorageKey('EBSCO_WIDGET_availableDomains', '["insb","inshs"]')
         .pause(1000)
-        .assert.containsText('.otherDomains', 'Les domaines possibles : insb, inshs');
+        .assert.containsText('.otherDomains', 'Domaine(s) autorisé(s) : insb, inshs');
 
         client.start(done);
     });
