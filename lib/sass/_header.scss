@@ -1,32 +1,41 @@
+
+.bsbb {
+    box-sizing: border-box;
+}
 .connexion {
     width: 100%;
     height: 80px;
+    display: flex;
+    align-items: stretch;
+    padding: 5px 10px 5px 10px;
+}
+ a {
+    max-height:70px;
+    align-self: center;
+ }
+ .bibcnrslogo {
+    max-width: 70px;
+    height: auto;
+}
+.siteTitle {
+    width: 45%;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    align-self: center;
 }
 .infos {
-    display: inline-block;
-    height: 75px;
-    padding-top: 5px;
+    width: 55%;
+    padding: 5px 0px 5px 0px;
     font-style: italic;
     font-size: 14px;
-    width: 55%;
     z-index: 100;
-    vertical-align: top;
-    .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .name, .otherDomains{
         text-align: right;
-        padding-right: 10px;
-        height: 35px;
     }
-    .otherDomains {
-        text-align: right;
-        padding-right: 10px;
-        height: 40px;
-    }
-}
-.bibcnrslogo {
-    position: absolute;
-    top: 10px;
-    left: 2%;
-    max-height: 60px;
 }
 .decoheader {
     position: absolute;
@@ -34,31 +43,41 @@
     left: 125px;
     z-index: -5;
 }
-.siteTitle {
-    height: 80px;
-    line-height: 80px;
-    display:inline-block;
-    width: 45%;
-    text-align: right;
-    font-size: 18px;
-    font-weight: bold;
-}
-.widthTitle {
+.largeTitle {
     width:70%;
     vertical-align: middle;
     display: inline-block;
-    line-height: 1.2;
 }
-@media only screen and (max-width: 660px) {
+.smallTitle {
+    display: none;
+}
+@media (max-width: 660px) {
     .decoheader {
         display:none;
     }
+    .largeTitle {
+        display: none;
+    }
+    .smallTitle {
+        width:70%;
+        vertical-align: middle;
+        display: inline-block;        
+    }
 }
-@media only screen and (max-width: 525px) {
+@media (max-width: 525px) {
     .infos {
         display: none;
     }
     .siteTitle {
         width:100%;
     }
+}
+body {
+    max-width: 1403px;
+    background-color: grey;
+}
+#header {
+    background-color: #fff;
+    position: relative;
+    z-index: -6;
 }
