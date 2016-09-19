@@ -17,7 +17,7 @@
     max-width: 70px;
     height: auto;
 }
-.siteTitle {
+.sitetitle {
     width: 45%;
     text-align: right;
     font-size: 18px;
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    .name, .otherDomains{
+    .name, .otherdomains{
         text-align: right;
     }
 }
@@ -43,41 +43,32 @@
     left: 125px;
     z-index: -5;
 }
-.largeTitle {
+.largetitle {
     width:70%;
     vertical-align: middle;
     display: inline-block;
 }
-.smallTitle {
+.smalltitle {
     display: none;
 }
 @media (max-width: 660px) {
     .decoheader {
         display:none;
     }
-    .largeTitle {
+    .largetitle {
         display: none;
     }
-    .smallTitle {
+    .smalltitle {
         width:70%;
         vertical-align: middle;
-        display: inline-block;        
+        display: inline-block;
     }
 }
 @media (max-width: 525px) {
     .infos {
         display: none;
     }
-    .siteTitle {
+    .sitetitle {
         width:100%;
     }
-}
-body {
-    max-width: 1403px;
-    background-color: grey;
-}
-#header {
-    background-color: #fff;
-    position: relative;
-    z-index: -6;
 }

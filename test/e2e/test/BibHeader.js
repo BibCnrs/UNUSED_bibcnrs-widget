@@ -25,10 +25,10 @@ describe('Header', function() {
     it('should display hello world then sessionstorage.EBSCO_WIDGET_availableDomains value once set', function (done) {
         browser
         .waitForElementVisible('.connexion', 1000)
-        .assert.containsText('.otherDomains', '')
+        .assert.containsText('.otherdomains', '')
         .setSessionStorageKey('EBSCO_WIDGET_availableDomains', '["insb","inshs"]')
         .pause(1000)
-        .assert.containsText('.otherDomains', 'Domaines autorisés : insb, inshs');
+        .assert.containsText('.otherdomains', 'Domaines autorisés : insb, inshs');
 
         client.start(done);
     });
