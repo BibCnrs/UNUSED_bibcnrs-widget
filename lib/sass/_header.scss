@@ -18,8 +18,10 @@
     height: auto;
 }
 .sitetitle {
+    color: #00294B;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     width: 45%;
-    text-align: right;
+    padding-left: 20px;
     font-size: 18px;
     font-weight: bold;
     align-self: center;
@@ -51,7 +53,7 @@
 .smalltitle {
     display: none;
 }
-@media (max-width: 660px) {
+@media (max-width: 760px) {
     .decoheader {
         display:none;
     }
@@ -64,7 +66,7 @@
         display: inline-block;
     }
 }
-@media (max-width: 525px) {
+@media (max-width: 660px) {
     .infos {
         display: none;
     }
