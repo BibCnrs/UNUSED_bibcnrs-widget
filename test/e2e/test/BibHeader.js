@@ -26,9 +26,9 @@ describe('Header', function() {
         browser
         .waitForElementVisible('.connexion', 1000)
         .assert.containsText('.otherdomains', '')
-        .setSessionStorageKey('EBSCO_WIDGET_availableDomains', '["insb","inshs"]')
+        .setSessionStorageKey('EBSCO_WIDGET_availableDomains', '["INSB","INSHS"]')
         .pause(1000)
-        .assert.containsText('.otherdomains', 'Domaines autorisés : insb, inshs');
+        .assert.containsText('.otherdomains', 'Domaines autorisés : Biologie, Homme & Société');
 
         client.start(done);
     });
