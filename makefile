@@ -11,7 +11,7 @@ ifneq "$(SUPPORTS_MAKE_ARGS)" ""
 endif
 
 install:
-	docker-compose run --rml npm install
+	docker-compose run --rm npm install
 
 build:
 	docker-compose run --rm build
